@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج بيانات العميل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f9f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+            text-align: center;
+            color: #28a745;
+        }
+
+        /* معلومات المدير والمساعد */
+        .gm-info {
+            position: fixed;
+            left: 20px;
+            top: 50px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .gm-info h2 {
+            font-size: 16px;
+            color: #28a745;
+        }
+
+        .gm-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* التواصل مع الدعم الفني */
+        .contact-support {
+            position: fixed;
+            right: 20px;
+            top: 50px;
+            text-align: center;
+        }
+
+        .contact-support a {
+            color: white;
+            background-color: #25D366;
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-support a img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+       
+        <!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج بيانات العميل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f9f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+            text-align: center;
+            color: #28a745;
+        }
+
+        /* معلومات المدير والمساعد */
+        .gm-info {
+            position: fixed;
+            left: 20px;
+            top: 50px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .gm-info h2 {
+            font-size: 16px;
+            color: #28a745;
+        }
+
+        .gm-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* التواصل مع الدعم الفني */
+        .contact-support {
+            position: fixed;
+            right: 20px;
+            top: 50px;
+            text-align: center;
+        }
+
+        .contact-support a {
+            color: white;
+            background-color: #25D366;
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-support a img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .contact-support a:hover {
+            background-color: #20c057;
+        }
+
+        .contact-support .facebook {
+            background-color: #3b5998;
+        }
+
+        .contact-support .facebook:hover {
+            background-color: #2d4373;
+        }
+
+        /* حاوية النموذج */
+        .form-container {
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        .input-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-icon img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* الدفع */
+        .payment-section {
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        /* إضافة أيقونة كاش */
+        .payment-section h3 {
+            color: #28a745;
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-section h3 img {
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        /* الهوامش */
+        .form-container h2.section-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- اسم Green Book في الأعلى في المنتصف -->
+    <h1>Green Book</h1>
+
+    <!-- معلومات المدير والمساعد -->
+    <div class="gm-info">
+        <h2>GM: Mohamed Mostufa</h2>
+        <p>Assistant Manager: Maroa Mohamed</p>
+    </div>
+
+    <!-- التواصل مع الدعم الفني -->
+    <div class="contact-support">
+        <a href="https://wa.me/0201030435987" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="الدعم الفني"> الدعم الفني
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61560334690283" target="_blank" class="facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> صفحتنا على الفيسبوك
+        </a>
+    </div>
+
+    <!-- نموذج البيانات -->
+    <div class="form-container">
+        <form id="customerForm">
+            <!-- المعلومات الشخصية -->
+            <h2 class="section-title">المعلومات الشخصية</h2>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="اسم">
+                <input type="text" id="name" name="name" placeholder="أدخل اسم العميل" required>
+            </div>
+
+            <!-- بيانات الاتصال -->
+            <h2 class="section-title">بيانات الاتصال</h2>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/address.png" alt="العنوان">
+                <input type="text" id="address" name="address" placeholder="أدخل العنوان" required>
+            </div>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="الهاتف">
+                <input type="text" id="phone1" name="phone1" placeholder="أدخل رقم التواصل الأول" required>
+            </div>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="الهاتف">
+                <input type="text" id="phone2" name="phone2" placeholder="أدخل رقم التواصل الثاني">
+            </div>
+
+            <!-- معلومات الكتاب -->
+            <h2 class="section-title">معلومات الكتاب</h2>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/book.png" alt="الكتاب">
+                <select id="book" name="book" required>
+                    <option value="">اختر الكتاب</option>
+                    <option value="البيع الناجح 1">البيع الناجح 1</option>
+                    <option value="البيع الناجح 2">البيع الناجح 2</option>
+                    <option value="100 عطر">100 عطر</option>
+                    <option value="100 عنصر كميائي">100 عنصر كميائي</option>
+                    <option value="100 منتج مطاعم">100 منتج مطاعم</option>
+                    <option value="المخبوزات">المخبوزات</option>
+                    <option value="قراءة الوجوه">قراءة الوجوه</option>
+                    <option value="الحلم الواعي">الحلم الواعي</option>
+                    <option value="كيف تصبح عبقرياً">كيف تصبح عبقرياً</option>
+                    <option value="الحساب الذهني">الحساب الذهني</option>
+                    <option value="القيادة والسيطرة">القيادة والسيطرة</option>
+                    <option value="الجبن">الجبن</option>
+                    <option value="الشوكولاته">الشوكولاته</option>
+                    <option value="القراءة السريعة">القراءة السريعة</option>
+                    <option value="أطفال أسوياء">أطفال أسوياء</option>
+                    <option value="السعادة الزوجية">السعادة الزوجية</option>
+                    <option value="3000 نصيحة">3000 نصيحة</option>
+                    <option value="المدرب المحترف">المدرب المحترف</option>
+                </select>
+            </div>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/money.png" alt="السعر">
+                <input type="number" id="price" name="price" placeholder="أدخل السعر" required>
+            </div>
+
+            <div class="input-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/note.png" alt="ملاحظة">
+                <input type="text" id="note" name="note" placeholder="أدخل ملاحظاتك">
+            </div>
+
+            <button type="button" onclick="submitForm()">اكتمل</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Green Book. جميع الحقوق محفوظة.</p>
+    </div>
+
+    <script>
+        function submitForm() {
+            var form = document.getElementById('customerForm');
+            var formData = new FormData(form);
+
+            fetch('https://script.google.com/macros/s/AKfycbwntcLLn95Md1Ha93LKnPNOrPruOn07u1Vfo7m4Br62uEr_bjSLdOegce2gY6i0kSbGoA/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                resetForm(); // مسح الحقول بعد إرسال البيانات بنجاح
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // دالة لمسح الحقول في النموذج بعد الإرسال
+        function resetForm() {
+            document.getElementById('customerForm').reset();
+        }
+    </script>
+
+</body>
+
+</html>
